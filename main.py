@@ -1,4 +1,3 @@
-
 import sqlite3 
 import os, time
 from datetime import datetime
@@ -135,7 +134,6 @@ def createNewUserScreen():
 def init():
     migrations()
 
-
 class Application:
     def __init__(self, master=None):
         buttonExample = Button(root, 
@@ -143,15 +141,7 @@ class Application:
               command=createNewUserScreen)
         buttonExample.pack()
 
-
-
 Application(root)
 root.title(title)
 root.geometry( str(width) + "x" + str(height))
 root.mainloop()
-
-
-
-
-
-
